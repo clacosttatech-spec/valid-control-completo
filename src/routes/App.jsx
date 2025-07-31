@@ -2,14 +2,13 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Login from '../pages/Login';
 import Dashboard from '../pages/Dashboard';
-import { useState } from 'react';
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const isAuthenticated = true; // Temporariamente true só pra garantir que algo apareça
 
   return (
     <Routes>
-      <Route path="/" element={<Login onLogin={() => setIsAuthenticated(true)} />} />
+      <Route path="/" element={<Login />} />
       <Route
         path="/dashboard"
         element={isAuthenticated ? <Dashboard /> : <Navigate to="/" />}
