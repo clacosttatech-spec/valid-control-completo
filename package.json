@@ -1,12 +1,11 @@
 {
-  "name": "valid-control-completo",
+  "name": "valid-control-vercel",
   "version": "1.0.0",
-  "description": "Clone completo com login e dashboard",
-  "main": "src/main.jsx",
+  "description": "React Vite app funcional com deploy para Vercel",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 4173"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",

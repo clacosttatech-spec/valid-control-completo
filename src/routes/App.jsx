@@ -4,15 +4,12 @@ import Login from '../pages/Login';
 import Dashboard from '../pages/Dashboard';
 
 function App() {
-  const isAuthenticated = true; // Temporariamente true só pra garantir que algo apareça
+  const isAuthenticated = true;
 
   return (
     <Routes>
       <Route path="/" element={<Login />} />
-      <Route
-        path="/dashboard"
-        element={isAuthenticated ? <Dashboard /> : <Navigate to="/" />}
-      />
+      <Route path="/dashboard" element={isAuthenticated ? <Dashboard /> : <Navigate to="/" />} />
     </Routes>
   );
 }
